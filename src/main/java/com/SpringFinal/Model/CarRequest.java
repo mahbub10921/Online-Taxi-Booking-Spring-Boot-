@@ -1,5 +1,5 @@
 package com.SpringFinal.Model;
 
-public class TaxiRequest {
+public class CarRequest {
 
 }

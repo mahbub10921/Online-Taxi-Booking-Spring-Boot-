@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
+import javax.persistence.PrePersist;
 
 @Entity
 @Data
@@ -20,5 +21,6 @@ public class Taxi extends BaseModel{
     private int fair;
     @OneToOne(mappedBy = "taxi", cascade = CascadeType.ALL)
     private Driver driver;
+
 
 }

@@ -91,7 +91,10 @@ public class TaxiController {
         list.forEach(taxi -> {taxi.getDriver().setTaxi(null);});
         return list;
     }
-
+@GetMapping("/updateCustom/{id}")
+    public void save(@PathVariable Long id){
+        taxiRepo.customUpdate(id);
+}
 
 
 }
