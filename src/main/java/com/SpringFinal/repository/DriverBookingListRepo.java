@@ -1,5 +1,6 @@
 package com.SpringFinal.repository;
 
+import com.SpringFinal.Model.DriverBookingList;
 import com.SpringFinal.Model.Taxi;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -9,16 +10,13 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Repository
-public interface TaxiRepo extends JpaRepository<Taxi, Long> {
-
-    @Query( value = "select * from taxi where active = 1", nativeQuery = true)
-    public List<Taxi> customGet();
-
+public interface DriverBookingListRepo extends JpaRepository<DriverBookingList, Long> {
+    @Query( value = "select * from driver_booking_list where active = 1", nativeQuery = true)
+    public DriverBookingList customGet();
 
     @Modifying
     @Transactional
-    @Query( value = "update taxi set active=false where id=?", nativeQuery = true)
+    @Query( value = "update driver_booking_list set active=false where id=?", nativeQuery = true)
     public void customUpdate(Long id);
-
 
 }
