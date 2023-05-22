@@ -11,12 +11,12 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 @Repository
 public interface DriverBookingListRepo extends JpaRepository<DriverBookingList, Long> {
-    @Query( value = "select * from driver_booking_list where active = 1", nativeQuery = true)
+    @Query( value = "select * from driver_booking_list where state = 1 limit 1", nativeQuery = true)
     public DriverBookingList customGet();
 
     @Modifying
     @Transactional
-    @Query( value = "update driver_booking_list set active=false where id=?", nativeQuery = true)
+    @Query( value = "update driver_booking_list set state=false where id=?", nativeQuery = true)
     public void customUpdate(Long id);
 
 }

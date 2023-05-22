@@ -93,6 +93,7 @@ public class TaxiController {
     }
 @GetMapping("/updateCustom/{id}")
     public void save(@PathVariable Long id){
+    System.out.println("id--"+id);
         taxiRepo.customUpdate(id);
 }
 
