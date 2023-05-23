@@ -14,9 +14,16 @@ public interface DriverBookingListRepo extends JpaRepository<DriverBookingList, 
     @Query( value = "select * from driver_booking_list where state = 1 limit 1", nativeQuery = true)
     public DriverBookingList customGet();
 
+//    @Modifying
+//    @Transactional
+//    @Query( value = "update driver_booking_list set state=false where id=?", nativeQuery = true)
+//    public void customUpdate(Long id);
+
+
     @Modifying
-    @Transactional
-    @Query( value = "update driver_booking_list set state=false where id=?", nativeQuery = true)
+   @Transactional
+   @Query( value = "update driver_booking_list set state=false,status='Booked' where id=?", nativeQuery = true)
     public void customUpdate(Long id);
+
 
 }
