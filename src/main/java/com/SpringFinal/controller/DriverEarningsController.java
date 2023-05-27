@@ -22,9 +22,8 @@ public class DriverEarningsController {
 
 
     @GetMapping("/getFar/{id}")
-    public DriverEarnings getEarnings(@PathVariable(value = "id") Long id){
-        return  driverEarningRepo.getById(id);
+    public DriverEarnings getEarnings(@PathVariable("id") Long id){
+        return  driverEarningRepo.findById(id).get();
     }
-
 
 }
