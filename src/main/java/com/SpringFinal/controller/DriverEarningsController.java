@@ -12,6 +12,7 @@ public class DriverEarningsController {
 
     @Autowired
     DriverEarningRepo driverEarningRepo;
+    
     @GetMapping("/getFare")
     public int getFare(@RequestParam(value = "fare") Long fare){
      return  driverEarningRepo.customUpdate(fare);

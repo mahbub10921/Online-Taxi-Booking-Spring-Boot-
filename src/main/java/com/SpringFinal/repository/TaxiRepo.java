@@ -18,7 +18,13 @@ public interface TaxiRepo extends JpaRepository<Taxi, Long> {
     @Modifying
     @Transactional
     @Query( value = "update taxi set active=false where id=?", nativeQuery = true)
-    public int customUpdate(Long id);
+    public int updateFalse(Long id);
+
+    @Modifying
+    @Transactional
+    @Query( value = "update taxi set active=true where id=?", nativeQuery = true)
+    public int updateTrue(Long id);
+
 
 
 }

@@ -56,11 +56,11 @@ public void initRoleandUser(){
     userRepo.save(adminUser);
 
 
-User driver2 = new User();
-driver2.setUserName("jamal");
-driver2.setEmail("jamal@gmail.com");
-driver2.setPassword("jamalja");
-driver2.setPhone("01527456857");
+User driver19 = new User();
+driver19.setUserName("jamal");
+driver19.setEmail("jamal@gmail.com");
+driver19.setPassword("jamalja");
+driver19.setPhone("01527456857");
 Set<Role> userRole1 = new HashSet<>();
 userRole1.add(userRole);
 
@@ -223,10 +223,14 @@ userRole1.add(userRole);
 
 //
 //    Driver driver1 = new Driver();
-//    driver1.setName("Kamal");
+//    driver1.setName("Md.Kamal Hasan");
 //    driver1.setAddress("Khilgaon,Dhaka");
 //    driver1.setNumber("01636455756");
 //    driver1.setNid("43572555");
+//
+//
+//
+//
 //
 //    Taxi taxi1 = new Taxi();
 //    taxi1.setRegistration("D-5467DT");
@@ -240,7 +244,7 @@ userRole1.add(userRole);
 //
 //
 //    Driver driver2 = new Driver();
-//    driver2.setName("Jamal");
+//    driver2.setName("Jamal Uddin");
 //    driver2.setAddress("Faridpur");
 //    driver2.setNumber("01636455756");
 //    driver2.setNid("43572555");
@@ -257,7 +261,7 @@ userRole1.add(userRole);
 //    taxiRepo.save(taxi2);
 //
 //    Driver driver3 = new Driver();
-//    driver3.setName("Rahim");
+//    driver3.setName("Rahim Patawary");
 //    driver3.setAddress("Khilgaon,Dhaka");
 //    driver3.setNumber("01636455756");
 //    driver3.setNid("43572555");
@@ -274,7 +278,7 @@ userRole1.add(userRole);
 //
 //
 //    Driver driver4 = new Driver();
-//    driver4.setName("Mizan");
+//    driver4.setName("Mizan Sarker");
 //    driver4.setAddress("Basabo");
 //    driver4.setNumber("01636455756");
 //    driver4.setNid("43572555");
@@ -291,7 +295,7 @@ userRole1.add(userRole);
 //    taxiRepo.save(taxi4);
 //
 //    Driver driver5 = new Driver();
-//    driver5.setName("Riaz");
+//    driver5.setName("Riaz Uddin");
 //    driver5.setAddress("Barishal");
 //    driver5.setNumber("01636455756");
 //    driver5.setNid("43572555");
@@ -308,7 +312,7 @@ userRole1.add(userRole);
 //    taxiRepo.save(taxi5);
 //
 //    Driver driver6 = new Driver();
-//    driver6.setName("Ashraf");
+//    driver6.setName("Ashraf Miah");
 //    driver6.setAddress("Gazipur");
 //    driver6.setNumber("01636455756");
 //    driver6.setNid("43572555");
@@ -325,7 +329,7 @@ userRole1.add(userRole);
 //    taxiRepo.save(taxi6);
 //
 //    Driver driver7 = new Driver();
-//    driver7.setName("Likhon");
+//    driver7.setName("Likhon Islam");
 //    driver7.setAddress("Khilgaon,Dhaka");
 //    driver7.setNumber("01636455756");
 //    driver7.setNid("43572555");
@@ -340,7 +344,7 @@ userRole1.add(userRole);
 //    driver7.setTaxi(taxi7);
 //    taxi7.setDriver(driver7);
 //    taxiRepo.save(taxi7);
-
+//
 }
 
 }
