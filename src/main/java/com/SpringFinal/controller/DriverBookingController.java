@@ -7,6 +7,8 @@ import com.SpringFinal.service.TaxiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
@@ -35,6 +37,12 @@ public class DriverBookingController {
     @GetMapping("/booking/{id}")
     public void customUpdate(@PathVariable Long id){
         driverBookingListRepo.customUpdate(id);
+    }
+
+
+    @GetMapping("getOnlyBooked")
+    public List<DriverBookingList> getBooked(){
+        return driverBookingListRepo.gett();
     }
 
 

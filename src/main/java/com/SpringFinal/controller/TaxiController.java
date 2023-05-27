@@ -100,7 +100,7 @@ public class TaxiController {
     @GetMapping("/updateCustom2/{id}")
     public void updateTrue(@PathVariable Long id){
         System.out.println("id--"+id);
-        taxiRepo.updateFalse(id);
+        taxiRepo.updateTrue(id);
     }
 
 

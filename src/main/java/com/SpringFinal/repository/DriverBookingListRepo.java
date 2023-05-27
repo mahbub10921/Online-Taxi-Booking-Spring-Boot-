@@ -26,4 +26,9 @@ public interface DriverBookingListRepo extends JpaRepository<DriverBookingList, 
     public void customUpdate(Long id);
 
 
+    @Query( value = "select * from driver_booking_list where state = 0", nativeQuery = true)
+    public List<DriverBookingList> gett();
+
+
+
 }

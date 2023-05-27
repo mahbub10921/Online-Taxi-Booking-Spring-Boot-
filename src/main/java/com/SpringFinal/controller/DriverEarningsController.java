@@ -1,5 +1,6 @@
 package com.SpringFinal.controller;
 
+import com.SpringFinal.Model.DriverEarnings;
 import com.SpringFinal.repository.DriverEarningRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
@@ -17,4 +18,13 @@ public class DriverEarningsController {
     public int getFare(@RequestParam(value = "fare") Long fare){
      return  driverEarningRepo.customUpdate(fare);
     }
+
+
+
+    @GetMapping("/getFar/{id}")
+    public DriverEarnings getEarnings(@PathVariable(value = "id") Long id){
+        return  driverEarningRepo.getById(id);
+    }
+
+
 }
