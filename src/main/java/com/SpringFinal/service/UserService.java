@@ -221,12 +221,13 @@ userRole1.add(userRole);
 
 
 
-//
+
 //    Driver driver1 = new Driver();
 //    driver1.setName("Md.Kamal Hasan");
 //    driver1.setAddress("Khilgaon,Dhaka");
 //    driver1.setNumber("01636455756");
 //    driver1.setNid("43572555");
+//    driver1.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
 //
 //
 //
@@ -248,6 +249,8 @@ userRole1.add(userRole);
 //    driver2.setAddress("Faridpur");
 //    driver2.setNumber("01636455756");
 //    driver2.setNid("43572555");
+//    driver2.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//
 //
 //    Taxi taxi2 = new Taxi();
 //    taxi2.setRegistration("C-756WU4");
@@ -265,6 +268,8 @@ userRole1.add(userRole);
 //    driver3.setAddress("Khilgaon,Dhaka");
 //    driver3.setNumber("01636455756");
 //    driver3.setNid("43572555");
+//    driver3.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//
 //
 //    Taxi taxi3 = new Taxi();
 //    taxi3.setRegistration("D-5764JE");
@@ -282,6 +287,8 @@ userRole1.add(userRole);
 //    driver4.setAddress("Basabo");
 //    driver4.setNumber("01636455756");
 //    driver4.setNid("43572555");
+//    driver4.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//
 //
 //    Taxi taxi4 = new Taxi();
 //    taxi4.setRegistration("D-5467DT");
@@ -299,6 +306,8 @@ userRole1.add(userRole);
 //    driver5.setAddress("Barishal");
 //    driver5.setNumber("01636455756");
 //    driver5.setNid("43572555");
+//    driver5.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//
 //
 //    Taxi taxi5 = new Taxi();
 //    taxi5.setRegistration("H-5467DT");
@@ -316,6 +325,8 @@ userRole1.add(userRole);
 //    driver6.setAddress("Gazipur");
 //    driver6.setNumber("01636455756");
 //    driver6.setNid("43572555");
+//    driver6.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//
 //
 //    Taxi taxi6 = new Taxi();
 //    taxi6.setRegistration("G-5467DT");
@@ -333,6 +344,8 @@ userRole1.add(userRole);
 //    driver7.setAddress("Khilgaon,Dhaka");
 //    driver7.setNumber("01636455756");
 //    driver7.setNid("43572555");
+//    driver7.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//
 //
 //    Taxi taxi7 = new Taxi();
 //    taxi7.setRegistration("K-5467DT");
@@ -344,7 +357,7 @@ userRole1.add(userRole);
 //    driver7.setTaxi(taxi7);
 //    taxi7.setDriver(driver7);
 //    taxiRepo.save(taxi7);
-//
+
 }
 
 }

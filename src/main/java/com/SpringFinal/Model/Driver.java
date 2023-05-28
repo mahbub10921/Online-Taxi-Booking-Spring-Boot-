@@ -17,9 +17,24 @@ public class Driver extends BaseModel{
     private String address;
     private String number;
     private String nid;
-    @OneToOne
+	private String imagePath;
+
+	public String getImagePath() {
+		return imagePath;
+	}
+
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
+
+	@OneToOne
     @JoinColumn(name="taxi_id")
     private Taxi taxi;
+
+
+
+
+
 	public String getName() {
 		return name;
 	}
