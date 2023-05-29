@@ -7,6 +7,8 @@ import com.SpringFinal.repository.TaxiRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
@@ -19,5 +21,12 @@ public class DetailsController {
     public void save(@RequestBody Details details) {
        detailsRepo.save(details);
     }
+
+    @GetMapping("/postDetail")
+    public List<Details> get() {
+       return detailsRepo.findAll();
+    }
+
+
 
 }

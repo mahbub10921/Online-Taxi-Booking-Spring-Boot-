@@ -57,12 +57,42 @@ public void initRoleandUser(){
 
 
 User driver19 = new User();
-driver19.setUserName("jamal");
+driver19.setUserName("Jamal");
 driver19.setEmail("jamal@gmail.com");
 driver19.setPassword("jamalja");
 driver19.setPhone("01527456857");
 Set<Role> userRole1 = new HashSet<>();
-userRole1.add(userRole);
+userRole1.add(driverRole);
+    driver19.setRole(userRole1);
+    userRepo.save(driver19);
+
+
+    User driver1 = new User();
+    driver1.setUserName("Rahim");
+    driver1.setEmail("jamal@gmail.com");
+    driver1.setPassword("jamalja");
+    driver1.setPhone("01527456857");
+    Set<Role> userRole2 = new HashSet<>();
+    userRole2.add(driverRole);
+    driver19.setRole(userRole2);
+    userRepo.save(driver1);
+
+
+
+
+
+    User driver12 = new User();
+    driver12.setUserName("Mizan");
+    driver12.setEmail("jamal@gmail.com");
+    driver12.setPassword("jamalja");
+    driver12.setPhone("01527456857");
+    Set<Role> userRole3 = new HashSet<>();
+    userRole3.add(driverRole);
+    driver12.setRole(userRole3);
+    userRepo.save(driver12);
+
+
+
 
 
     User user = new User();
@@ -77,7 +107,7 @@ userRole1.add(userRole);
 
 
     User driver = new User();
-    driver.setUserName("kamal");
+    driver.setUserName("Kamal");
 //  adminUser.setPassword(getEncodedPassword("admin@pass"));
     driver.setPassword("kamalkaku");
     driver.setEmail("kamal@gmail.com");
@@ -222,12 +252,12 @@ userRole1.add(userRole);
 
 //
 //
-//    Driver driver1 = new Driver();
-//    driver1.setName("Md.Kamal Hasan");
-//    driver1.setAddress("Khilgaon,Dhaka");
-//    driver1.setNumber("01636455756");
-//    driver1.setNid("43572555");
-//    driver1.setImagePath("assets\\IMG.JPG");
+//    Driver driver6 = new Driver();
+//    driver6.setName("Jamal");
+//    driver6.setAddress("Khilgaon,Dhaka");
+//    driver6.setNumber("01636455756");
+//    driver6.setNid("43572555");
+//    driver6.setImagePath("assets\\IMG.JPG");
 //
 //
 //
@@ -239,13 +269,13 @@ userRole1.add(userRole);
 //    taxi1.setCompany("Toyota");
 //    taxi1.setCategory("4 seat");
 //    taxi1.setFair(50);
-//    driver1.setTaxi(taxi1);
-//    taxi1.setDriver(driver1);
+//    driver6.setTaxi(taxi1);
+//    taxi1.setDriver(driver6);
 //    taxiRepo.save(taxi1);
 //
 //
 //    Driver driver2 = new Driver();
-//    driver2.setName("Jamal Uddin");
+//    driver2.setName("Kamal");
 //    driver2.setAddress("Faridpur");
 //    driver2.setNumber("01636455756");
 //    driver2.setNid("43572555");
@@ -264,7 +294,7 @@ userRole1.add(userRole);
 //    taxiRepo.save(taxi2);
 //
 //    Driver driver3 = new Driver();
-//    driver3.setName("Rahim Patawary");
+//    driver3.setName("Rahim ");
 //    driver3.setAddress("Khilgaon,Dhaka");
 //    driver3.setNumber("01636455756");
 //    driver3.setNid("43572555");
@@ -283,7 +313,7 @@ userRole1.add(userRole);
 //
 //
 //    Driver driver4 = new Driver();
-//    driver4.setName("Mizan Sarker");
+//    driver4.setName("Mizan ");
 //    driver4.setAddress("Basabo");
 //    driver4.setNumber("01636455756");
 //    driver4.setNid("43572555");
@@ -320,12 +350,12 @@ userRole1.add(userRole);
 //    taxi5.setDriver(driver5);
 //    taxiRepo.save(taxi5);
 //
-//    Driver driver6 = new Driver();
-//    driver6.setName("Ashraf Miah");
-//    driver6.setAddress("Gazipur");
-//    driver6.setNumber("01636455756");
-//    driver6.setNid("43572555");
-//    driver6.setImagePath("assets\\man2.jpg");
+//    Driver driver66 = new Driver();
+//    driver66.setName("Ashraf Miah");
+//    driver66.setAddress("Gazipur");
+//    driver66.setNumber("01636455756");
+//    driver66.setNid("43572555");
+//    driver66.setImagePath("assets\\man2.jpg");
 //
 //
 //    Taxi taxi6 = new Taxi();
@@ -335,8 +365,8 @@ userRole1.add(userRole);
 //    taxi6.setCategory("7 seat");
 //    taxi6.setFair(80);
 //
-//    driver6.setTaxi(taxi6);
-//    taxi6.setDriver(driver6);
+//    driver66.setTaxi(taxi6);
+//    taxi6.setDriver(driver66);
 //    taxiRepo.save(taxi6);
 //
 //    Driver driver7 = new Driver();

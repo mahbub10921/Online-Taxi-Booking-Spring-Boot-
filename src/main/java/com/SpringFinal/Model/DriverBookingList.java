@@ -17,7 +17,7 @@ public class DriverBookingList {
     @Column(updatable = false)
     @CreatedDate
     private LocalDate date_booked;
-    private Long Ref_code;
+    private Long refCode;
     private String pickup;
     private String dropup;
     private double fare;

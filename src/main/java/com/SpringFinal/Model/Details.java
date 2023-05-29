@@ -14,15 +14,11 @@ public class Details {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    private Long carId;
-
     private LocalDate date_booked;
-    private Long Ref_code;
+    private Long refCode;
     private String pickup;
     private String dropup;
     private double fare;
-    private String status;
     private double percentage;
 
 }

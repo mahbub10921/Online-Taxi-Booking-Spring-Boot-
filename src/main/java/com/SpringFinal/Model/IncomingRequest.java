@@ -22,6 +22,7 @@ public class IncomingRequest {
     private Boolean status;
     private String clientName;
     private String phone;
+    private String driverName;
 
 
     @PrePersist
