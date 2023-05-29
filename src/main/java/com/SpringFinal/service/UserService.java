@@ -121,14 +121,14 @@ userRole1.add(userRole);
 
     Route agar = new Route();
     agar.setLocation("Agargaon");
-    agar.setLatitude(23.77847479920561);
-    agar.setLongitude(90.38014788528353);
+    agar.setLatitude(23.778178262503424);
+    agar.setLongitude(90.37959106407965);
     routeRepo.save(agar);
 
     Route mali = new Route();
     mali.setLocation("Abul Hotel,Malibagh,Dhaka");
-    mali.setLatitude(23.77847479920561);
-    mali.setLongitude(90.38014788528353);
+    mali.setLatitude(23.754285707376678);
+    mali.setLongitude(90.41593784085504);
     routeRepo.save(mali);
 
     Route moti = new Route();
@@ -220,14 +220,14 @@ userRole1.add(userRole);
 
 
 
-
-
+//
+//
 //    Driver driver1 = new Driver();
 //    driver1.setName("Md.Kamal Hasan");
 //    driver1.setAddress("Khilgaon,Dhaka");
 //    driver1.setNumber("01636455756");
 //    driver1.setNid("43572555");
-//    driver1.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//    driver1.setImagePath("assets\\IMG.JPG");
 //
 //
 //
@@ -249,7 +249,7 @@ userRole1.add(userRole);
 //    driver2.setAddress("Faridpur");
 //    driver2.setNumber("01636455756");
 //    driver2.setNid("43572555");
-//    driver2.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//    driver2.setImagePath("assets\\man1.jpeg");
 //
 //
 //    Taxi taxi2 = new Taxi();
@@ -268,7 +268,7 @@ userRole1.add(userRole);
 //    driver3.setAddress("Khilgaon,Dhaka");
 //    driver3.setNumber("01636455756");
 //    driver3.setNid("43572555");
-//    driver3.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//    driver3.setImagePath("assets\\man2.jpg");
 //
 //
 //    Taxi taxi3 = new Taxi();
@@ -287,7 +287,7 @@ userRole1.add(userRole);
 //    driver4.setAddress("Basabo");
 //    driver4.setNumber("01636455756");
 //    driver4.setNid("43572555");
-//    driver4.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//    driver4.setImagePath("assets\\man2.jpg");
 //
 //
 //    Taxi taxi4 = new Taxi();
@@ -306,7 +306,7 @@ userRole1.add(userRole);
 //    driver5.setAddress("Barishal");
 //    driver5.setNumber("01636455756");
 //    driver5.setNid("43572555");
-//    driver5.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//    driver5.setImagePath("assets\\man4.jpg");
 //
 //
 //    Taxi taxi5 = new Taxi();
@@ -325,7 +325,7 @@ userRole1.add(userRole);
 //    driver6.setAddress("Gazipur");
 //    driver6.setNumber("01636455756");
 //    driver6.setNid("43572555");
-//    driver6.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//    driver6.setImagePath("assets\\man2.jpg");
 //
 //
 //    Taxi taxi6 = new Taxi();
@@ -344,7 +344,7 @@ userRole1.add(userRole);
 //    driver7.setAddress("Khilgaon,Dhaka");
 //    driver7.setNumber("01636455756");
 //    driver7.setNid("43572555");
-//    driver7.setImagePath("C:\\Users\\B10\\Downloads\\IMG.jpg");
+//    driver7.setImagePath("assets\\man4.jpg");
 //
 //
 //    Taxi taxi7 = new Taxi();
