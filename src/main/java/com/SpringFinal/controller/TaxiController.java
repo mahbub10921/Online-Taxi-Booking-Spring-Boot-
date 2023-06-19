@@ -2,9 +2,11 @@ package com.SpringFinal.controller;
 
 import com.SpringFinal.Model.Bus;
 import com.SpringFinal.Model.Taxi;
+import com.SpringFinal.Model.newDriver;
 import com.SpringFinal.dto.BusDTO;
 import com.SpringFinal.dto.ResponseMessage;
 import com.SpringFinal.dto.TaxiDto;
+import com.SpringFinal.repository.NewDriver;
 import com.SpringFinal.repository.TaxiRepo;
 import com.SpringFinal.service.BusService;
 import com.SpringFinal.service.TaxiService;
@@ -21,8 +23,13 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 
 public class TaxiController {
+
     @Autowired
     TaxiService taxiService;
+
+
+    @Autowired
+    NewDriver newDriver;
 
     @Autowired
     TaxiRepo  taxiRepo;
@@ -35,6 +42,17 @@ public class TaxiController {
         taxi.getDriver().setTaxi(taxi);
         taxiService.save(taxi);
     }
+
+    @PostMapping("/taxi1")
+    public void save1(@RequestBody newDriver dri ){
+
+
+
+        newDriver.save(dri);
+    }
+
+
+
 
 
     @PutMapping("/taxi")
